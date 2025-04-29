@@ -7,3 +7,7 @@ function toggleColorSchemeIcon(element) {
       : "none";
   });
 }
+
+// function type(i , t, ie, oe) {
+//     input = d
+// }
