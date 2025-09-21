@@ -6,8 +6,6 @@ license = "MIT"
 edition = "2021"
 
 [dependencies]
+ratatui = { version = "0.29.0", default-features = false }
 color-eyre = "0.6.3"
-ratatui = {version = "0.29.0", default-features = false }
-ratzilla = { git = "https://github.com/junkdog/ratzilla", branch = "beamterm-update" }
-tachyonfx = "0.18.0"
-web-sys = { version = "0.3.80", features = ["Location", "Window", "console"] }
+ratzilla = "0.0.4"

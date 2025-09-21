@@ -7,10 +7,13 @@ use ratatui::{
     Frame, Terminal,
 };
 
-use ratzilla::{event::KeyEvent, WebGl2Backend, WebRenderer};
+use ratzilla::{
+    event::{KeyCode, KeyEvent},
+    CanvasBackend, WebRenderer,
+};
 
 fn main() -> io::Result<()> {
-    let backend = WebGl2Backend::new()?;
+    let backend = CanvasBackend::new()?;
     let terminal = Terminal::new(backend)?;
 
     let state = Rc::new(App::default());
